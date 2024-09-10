@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <h1>Registro Congreso</h1>
+    <form action="enviar.php" method="POST" enctype="multipart/form-data">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="archivo">Subir PDF:</label><br>
+        <input type="file" id="archivo" name="archivo" accept="application/pdf" required><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
